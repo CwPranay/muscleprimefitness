@@ -26,7 +26,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1 uppercase tracking-tighter">OUR LOCATION</h4>
-                  <p className="text-muted-foreground">Muscle Prime 2121, Kalyan West, Maharashtra 421301</p>
+                  <p className="text-muted-foreground">Muscle Prime Fitness, Kalyan West, Maharashtra 421301</p>
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ export default function Contact() {
           {/* Map Side */}
           <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-border grayscale hover:grayscale-0 transition-all duration-500">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.114704771761!2d73.1213!3d19.234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDE0JzAyLjQiTiA3M8KwMDcnMTYuNyJF!5e0!3m2!1sen!2sin!4v1647416390000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15069.902767147803!2d73.1255608871582!3d19.218089500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7953b735b5ab7%3A0xdec93294b2c83db7!2sMuscle%20Prime%202121!5e0!3m2!1sen!2sin!4v1774805825037!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
