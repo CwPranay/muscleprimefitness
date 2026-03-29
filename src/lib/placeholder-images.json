@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Premium gym interior with cinematic lighting",
+      "imageUrl": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "gym interior"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Modern fitness equipment setup",
+      "imageUrl": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "gym equipment"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Athlete training session",
+      "imageUrl": "https://images.unsplash.com/photo-1584466977773-e625c37cdd50?q=80&w=687&auto=format&fit=crop",
+      "imageHint": "weight training"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Crossfit training zone",
+      "imageUrl": "https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?q=80&w=687&auto=format&fit=crop",
+      "imageHint": "crossfit gym"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Premium dumbbells and free weights",
+      "imageUrl": "https://images.unsplash.com/photo-1584952811565-c4c4031805a8?q=80&w=687&auto=format&fit=crop",
+      "imageHint": "dumbbells weights"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Gym floor with diverse machines",
+      "imageUrl": "https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=600&auto=format&fit=crop",
+      "imageHint": "gym machines"
+    },
+    {
+      "id": "trainer-1",
+      "description": "Experienced male trainer",
+      "imageUrl": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&auto=format&fit=crop",
+      "imageHint": "fitness trainer"
+    },
+    {
+      "id": "trainer-2",
+      "description": "Professional training session",
+      "imageUrl": "https://images.unsplash.com/photo-1637430308606-86576d8fef3c?w=600&auto=format&fit=crop",
+      "imageHint": "personal trainer"
+    },
+    {
+      "id": "gym-vibe",
+      "description": "Energetic gym environment",
+      "imageUrl": "https://images.unsplash.com/photo-1693214674477-1159bddf1598?w=600&auto=format&fit=crop",
+      "imageHint": "indian gym"
+    }
+  ]
 }
