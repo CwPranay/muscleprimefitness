@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustSection from "@/components/TrustSection";
@@ -9,7 +8,6 @@ import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Chatbot from "@/components/Chatbot";
 import MobileStickyCTA from "@/components/MobileStickyCTA";
 
 export default function Home() {
@@ -27,7 +25,6 @@ export default function Home() {
       <Footer />
       
       {/* Floating Elements */}
-      <Chatbot />
       <MobileStickyCTA />
       
       {/* Floating WhatsApp for Desktop */}
