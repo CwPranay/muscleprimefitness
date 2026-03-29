@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from "react";
@@ -9,104 +8,105 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Basic",
+    name: "Basics",
     price: "1500",
     period: "Monthly",
     features: [
-      "Access to Gym Floor",
-      "Modern Cardio Equipment",
+      "Full Gym Access",
       "Locker Facility",
-      "Standard Weight Area",
-      "Trainer Guidance (On-floor)"
+      "Cardio Area",
+      "Standard Weight Zone",
+      "Trainer Assistance"
     ],
-    cta: "Join Now",
+    cta: "JOIN NOW",
     popular: false
   },
   {
-    name: "Standard",
+    name: "Elite",
     price: "4000",
     period: "3 Months",
-    description: "Best Value Plan!",
+    description: "MOST POPULAR CHOICE",
     features: [
-      "Full Gym Floor Access",
-      "All Cardio Equipment",
+      "Full Gym & Cardio",
       "Best Value Pricing",
-      "Locker & Steam Access",
-      "Discounted Renewals",
-      "Basic Diet Chart"
+      "Custom Diet Plan",
+      "Locker & Steam Room",
+      "Member Discounts",
+      "Renewal Priority"
     ],
-    cta: "Claim Offer",
+    cta: "CLAIM OFFER",
     popular: true
   },
   {
-    name: "Premium",
-    price: "Custom",
+    name: "VIP",
+    price: "Enquire",
     period: "Yearly / PT",
     features: [
-      "All Standard Perks",
-      "Personal Training sessions",
-      "Advanced Diet Planning",
-      "Monthly Body Composition",
-      "Premium Guest Access",
-      "Priority Support"
+      "1-on-1 Personal Training",
+      "Monthly Body Analysis",
+      "Custom Workout Logs",
+      "Supplement Guidance",
+      "Priority Access",
+      "VIP Events"
     ],
-    cta: "Enquire Now",
+    cta: "ENQUIRE NOW",
     popular: false
   }
 ];
 
 export default function Membership() {
   return (
-    <section id="membership" className="py-24 bg-background">
+    <section id="membership" className="py-24 bg-background overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-black mb-4">MEMBERSHIP <span className="text-primary">PLANS</span></h2>
-          <p className="text-muted-foreground max-w-xl mx-auto italic">*Additional facility charges may apply</p>
+        <div className="text-center mb-20 space-y-4">
+          <h2 className="text-5xl md:text-7xl font-black uppercase italic">MEMBERSHIP <span className="text-primary">TIERS</span></h2>
+          <div className="w-24 h-2 bg-primary mx-auto skew-x-[-20deg]" />
+          <p className="text-muted-foreground font-bold italic uppercase tracking-widest text-sm">*Taxes and facility charges extra</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {plans.map((plan) => (
             <Card 
               key={plan.name}
               className={cn(
-                "relative bg-card border-border transition-all duration-300 hover:-translate-y-2",
-                plan.popular && "border-primary shadow-[0_0_30px_rgba(59,43,239,0.2)]"
+                "relative bg-card border-2 border-white/5 rounded-none transition-all duration-500 hover:border-primary group",
+                plan.popular && "border-primary/50 bg-primary/5"
               )}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-white text-xs font-bold rounded-full uppercase tracking-widest">
-                  Best Value
+                <div className="absolute -top-4 left-6 px-4 py-1 bg-primary text-primary-foreground text-[10px] font-black uppercase tracking-widest italic skew-x-[-10deg]">
+                  BEST VALUE
                 </div>
               )}
-              <CardHeader className="text-center pt-10">
-                <CardTitle className="font-headline text-2xl uppercase tracking-tighter">{plan.name}</CardTitle>
-                <div className="mt-4">
-                  <span className="text-4xl font-black">₹{plan.price}</span>
-                  {plan.price !== "Custom" && <span className="text-muted-foreground ml-2">/ {plan.period}</span>}
+              <CardHeader className="text-left pt-12 pb-8 px-8">
+                <CardTitle className="text-3xl font-black italic uppercase tracking-tighter text-white group-hover:text-primary transition-colors">
+                  {plan.name}
+                </CardTitle>
+                <div className="mt-6 flex items-baseline">
+                  <span className="text-5xl font-black italic">₹{plan.price}</span>
+                  {plan.price !== "Enquire" && <span className="text-muted-foreground ml-2 font-bold uppercase text-xs">/ {plan.period}</span>}
                 </div>
-                {plan.description && <p className="text-primary text-sm font-bold mt-2 uppercase tracking-widest">{plan.description}</p>}
+                {plan.description && <p className="text-primary text-[10px] font-black mt-2 tracking-[0.2em]">{plan.description}</p>}
               </CardHeader>
-              <CardContent className="py-6">
-                <ul className="space-y-4">
+              <CardContent className="px-8 pb-8">
+                <ul className="space-y-4 border-t border-white/10 pt-8">
                   {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3 text-sm">
-                      <div className="bg-primary/20 p-1 rounded-full">
-                        <Check className="w-3 h-3 text-primary" />
-                      </div>
-                      {feature}
+                    <li key={feature} className="flex items-center gap-4 text-sm font-medium text-white/70">
+                      <Check className="w-4 h-4 text-primary shrink-0" />
+                      <span className="uppercase tracking-tight">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
-              <CardFooter className="pb-10">
+              <CardFooter className="px-8 pb-10 pt-4">
                 <Button 
                   asChild
                   className={cn(
-                    "w-full h-12 font-bold",
-                    plan.popular ? "bg-primary hover:bg-primary/90" : "bg-white/10 hover:bg-white/20 text-white"
+                    "w-full h-14 font-black italic rounded-none skew-x-[-12deg]",
+                    plan.popular ? "bg-primary hover:bg-primary/90 text-primary-foreground" : "bg-white/5 hover:bg-white/10 text-white"
                   )}
                 >
-                  <a href="https://wa.me/919100462121" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/919100462121" target="_blank" rel="noopener noreferrer" className="block skew-x-[12deg]">
                     {plan.cta}
                   </a>
                 </Button>

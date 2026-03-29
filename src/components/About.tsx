@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from "react";
@@ -11,41 +10,50 @@ export default function About() {
   return (
     <section id="about" className="py-24 bg-card">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="relative aspect-[4/5] md:aspect-square overflow-hidden border-4 border-primary/20 shadow-2xl">
             <Image
               src={gymVibe?.imageUrl || "https://picsum.photos/seed/about/800/800"}
-              alt="Muscle Prime 2121 Gym Culture"
+              alt="Muscle Prime Fitness Atmosphere"
               fill
-              className="object-cover"
-              data-ai-hint="indian gym"
+              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              data-ai-hint="fitness training"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-            <div className="absolute bottom-8 left-8 right-8">
-              <div className="font-headline text-3xl font-black mb-2 uppercase">RESULTS DRIVEN</div>
-              <p className="text-white/80">Transforming lives in Kalyan through discipline and elite training.</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+            <div className="absolute top-6 left-6 bg-primary text-primary-foreground px-4 py-1 font-black italic skew-x-[-10deg]">
+              EST. 2021
             </div>
           </div>
 
           <div className="space-y-8">
-            <h2 className="font-headline text-4xl md:text-5xl font-black leading-tight uppercase">
-              ABOUT <span className="text-primary">MUSCLE PRIME</span> 2121
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              We aren't just another gym; we are a premium fitness institution. Located in the heart of Kalyan, Muscle Prime 2121 is built on the foundation of grit, perseverance, and professional excellence.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Our space is designed for serious athletes and beginners alike, providing a cinematic workout environment that keeps you focused on your goal. Whether you're here to gain muscle, lose fat, or improve your athletic performance, we have the tools and expertise to make it happen.
+            <div className="space-y-2">
+              <span className="text-primary font-black tracking-widest uppercase italic text-sm">THE LEGACY</span>
+              <h2 className="text-5xl md:text-6xl font-black leading-[0.9] uppercase italic">
+                ABOUT <span className="text-primary">MUSCLE PRIME</span> FITNESS
+              </h2>
+            </div>
+            
+            <p className="text-xl text-white/60 font-medium leading-relaxed italic border-l-4 border-primary pl-6">
+              Muscle Prime Fitness is not just a gym. It's a high-performance training facility built for those who demand more from themselves.
             </p>
             
-            <div className="grid grid-cols-2 gap-6 pt-4">
-              <div>
-                <div className="text-primary font-black text-2xl mb-1 italic">TRANSFORMATION</div>
-                <p className="text-sm text-muted-foreground">Tailored programs designed for real life-changing results.</p>
+            <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+              <p>
+                Located in Kalyan West, our facility features elite strength equipment, a massive free-weight area, and a high-energy environment that forces you to push past your limits.
+              </p>
+              <p>
+                Our philosophy is simple: **Results over everything**. Whether you are looking for personal training, functional strength, or total transformation, we provide the tools and the atmosphere to make it a reality.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-8 pt-6">
+              <div className="p-4 bg-background border border-primary/20">
+                <div className="text-primary font-black text-3xl italic">100%</div>
+                <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Dedication</div>
               </div>
-              <div>
-                <div className="text-primary font-black text-2xl mb-1 italic">ELITE GEAR</div>
-                <p className="text-sm text-muted-foreground">Equipped with the finest machines for maximum efficiency.</p>
+              <div className="p-4 bg-background border border-primary/20">
+                <div className="text-primary font-black text-3xl italic">ELITE</div>
+                <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Standard</div>
               </div>
             </div>
           </div>

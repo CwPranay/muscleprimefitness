@@ -1,10 +1,9 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Muscle Prime 2121 | Premium Fitness Experience in Kalyan',
-  description: 'Experience premium fitness at Muscle Prime 2121, Kalyan. Expert trainers, world-class equipment, and high-energy workout environment.',
+  title: 'Muscle Prime Fitness | High Performance Gym in Kalyan',
+  description: 'Experience elite fitness at Muscle Prime Fitness, Kalyan. Bold atmosphere, expert trainers, and world-class equipment.',
 };
 
 export default function RootLayout({
@@ -13,13 +12,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased bg-background text-foreground overflow-x-hidden">
+      <body className="antialiased bg-background text-foreground overflow-x-hidden">
         {children}
       </body>
     </html>
